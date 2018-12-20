@@ -1,0 +1,49 @@
+<app-navbar> </app-navbar>
+
+<div class="container">
+
+<!-- <h1> My Name is {{myName}}    </h1>
+<h2>Location : {{location}}</h2>
+<p>status : {{ getstatus() }}</p>
+
+<p [innerText]="myName"> </p>
+<p>
+  <button class="btn btn-primary" [disabled]="!status" (click)="clickme()">Save</button>
+</p> -->
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" >
+  <div class="row">
+    <div class="col col-sm-4"></div>
+    <div class="col col-sm-4">
+<table class="table">
+  <tr>
+    <td>Name</td>
+    <td> <input type="text" name="getName" ngModel />  </td>
+  </tr>
+  <tr>
+    <td>Roll Number</td>
+    <td> <input type="text" name="getRoll" ngModel />  </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td> <button type="submit" class="btn btn-primary" >SUBMIT</button> </td>
+  </tr>
+
+<tr>
+  <td>
+    {{myName}}
+  </td>
+</tr>
+
+
+</table>
+
+    </div>
+    <div class="col col-sm-4"></div>
+  </div>
+</form>
+
+
+
+</div>
